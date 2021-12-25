@@ -1,0 +1,15 @@
+ 
+ Project Name: Blood Bank.
+ Developer:Abacus
+
+ **Please create a MySql database named "mydb" and import included Tables
+ to the database.**
+ 
+ **Required Library ----    
+
+ 1. rs2xml.jar
+ 2. mysql-connector-java-5.1.35.jar
+
+ **Default 
+   Username: admin
+   Password:12345

@@ -1,0 +1,37 @@
+Connection con = DBObj.GetConnection();
+       if (nameTextField.equals(""))
+       {
+           JOptionPane.showMessageDialog(this,"Please enter a Name..!");
+       }
+         else  if(addressTextField.equals(""))
+          {
+            JOptionPane.showMessageDialog(this,"Please enter an Address..!");
+           
+       }
+          
+         else  if(contactTextField.equals(""))
+          {
+            JOptionPane.showMessageDialog(this,"Please enter a Contact..!");
+           
+       }
+          
+         else  if(emailTextField.equals(""))
+          {
+            JOptionPane.showMessageDialog(this,"Please enter a email..!");
+           
+       }
+          else
+          {
+                     Statement stmt=null;
+                   try
+   {        stmt = con.createStatement();
+            String query = "INSERT INTO Registration"  + "VALUES (100, 'Zara','Ali',18)";
+            stmt.executeUpdate(sql);
+            
+       
+   } 
+        catch (SQLException ex)  
+        {
+       Logger.getLogger(NewComerUI.class.getName()).log(Level.SEVERE,null,ex);
+       return null;
+   }
